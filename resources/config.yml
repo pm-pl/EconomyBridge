@@ -1,0 +1,1 @@
+type: yaml #How do you want the plugin store players data/balance? sqlite or yaml?
