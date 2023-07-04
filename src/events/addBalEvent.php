@@ -12,7 +12,8 @@ use pocketmine\utils\Config;
 use iNA16\EconomyBridge\events\userExistsEvent;
 
 class addBalEvent extends PluginBase{
-  public $db = $this->getDataFolder() . "players_data.yml";
+  private $db;
+  #public $db = $this->getDataFolder() . "players_data.yml";
   
   public function addBal(string $player, int $amount) {
     if ($this->userExists($player)) {
