@@ -15,10 +15,10 @@ class addBalEvent extends PluginBase{
   public function addBal(string $player, int $amount) {
     if ($this->userExists($player)) {
       $this->updateBalance($player, $amount);
-      echo "Balance updated successfully.";
+      return "Balance updated successfully.";
     } else {
       $this->newAccount($player);
-      echo "New account created successfully.";
+      return "New account created successfully.";
     }
   }
 }
