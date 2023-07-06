@@ -8,7 +8,7 @@ use pocketmine\plugin\PluginBase;
 use iNA16\EconomyBridge\commands\balanceCommand;
 
 class Loader{
-  public static function registerCommands(Plugin $plugin): void {
+  public static function registerCommands(PluginBase $plugin): void {
     #$commandMap = $plugin->getServer()->getCommandMap();
     #$commandMap->register("balance", new balanceCommand($plugin));
     $plugin->getServer()->getCommandMap()->registerAll($plugin->getName(), [
