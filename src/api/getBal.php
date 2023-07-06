@@ -8,7 +8,6 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
 class getBal{
-  /* extends PluginBase{*/
   private $plugin;
   public function __construct(PluginBase $plugin) {
     $this->plugin = $plugin;

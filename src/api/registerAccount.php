@@ -9,7 +9,7 @@ use pocketmine\utils\Config;
 
 class registerAccount {
     private $plugin;
-    private $config;
+    public $config;
     public function __construct(PluginBase $plugin) {
         $this->plugin = $plugin;
     }
@@ -26,6 +26,5 @@ class registerAccount {
         
         $this->config->set($player, $data);
         $this->config->save();
-        $this->plugin->getLogger()->error("New Player $player has $startingBalance now");
     }
 }
