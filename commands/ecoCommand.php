@@ -24,7 +24,7 @@ class ecoCommand extends Command {
     private $plugin;
     public function __construct(Plugin $plugin){
         $this->setPermission("ecobridge.op");
-        parent::__construct("eco", "", "/eco");
+        parent::__construct("eco", "", "/eco help");
         $this->plugin = $plugin;
     }
 
