@@ -5,13 +5,6 @@ main: iNA16\EconomyBridge\Main
 api: 5.0.0
 src-namespace-prefix: iNA16\EconomyBridge
 
-commands:
-  economybridge:
-    description: EcoBridge Cmd
-    permission: ecobridge.use
-  ecobrconfig:
-    description: Reload Config file
-    permission: ecobridge.op
 permissions:
   ecobridge.use:
     default: true
