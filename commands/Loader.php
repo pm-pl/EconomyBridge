@@ -13,7 +13,8 @@ class Loader{
   public static function registerCommands(PluginBase $plugin): void {
     $plugin->getServer()->getCommandMap()->registerAll($plugin->getName(), [
                                                        new balanceCommand($plugin),
-                                                       new ecoCommand($plugin)
+                                                       new ecoCommand($plugin),
+                                                       new payCommand($plugin)
     ]);
   }
 }
