@@ -22,7 +22,6 @@ use iNA16\EconomyBridge\VersionInfo;
 class ecoCommand extends Command {
 
     private $plugin;
-    private $config;
     public function __construct(Plugin $plugin){
         $this->setPermission("ecobridge.op");
         parent::__construct("eco", "", "/eco");
@@ -31,8 +30,8 @@ class ecoCommand extends Command {
 
     public function execute(CommandSender $sender, string $commandLabel, array $args) : bool {
     $setBal = new setBal($this->plugin);
-    if (count($args) < 3 or empty($args) and $args[0] !== "help") {
-      $sender->sendMessage("§e*-- EconomyBridge §f" . VersionInfo::VERSION . " §cby §fiNA16 §e--*");
+    if (count($args) < 3 || (count($args) === 0 && $args[0] !== "help")) {
+      $sender->sendMessage("§e*-- EconomyBridge §f v" . VersionInfo::VERSION . " §cby §fiNA16 §e--*");
       $sender->sendMessage("§8Use `/eco help` for help.");
     } else if(count($args) == 3 or $args[0] == "help") {
       if ($args[0] == "help") {
