@@ -1,1 +1,17 @@
-type: yaml #How do you want the plugin store players data/balance? sqlite or yaml?
+# EconomyBridge Configuration
+# You can config the plugin from here
+
+# Currency Configuration
+Currency:
+  Symbol: "$" # What symbol do you want to use for the currency?
+
+# Player Balance Configuration
+PlayerBalance:
+  StartingAmount: 100 # How much currency should players receive by default on their first join?
+  MaxAmount: 1000000 # Maximum limit for a player's balance
+
+# Bank Balance Configuration
+BankBalance:
+  Enabled: true # Enable or disable the banking feature
+  StartingAmount: 1000 # How much currency should players receive in their bank on their first join?
+  MaxAmount: 5000000 # Maximum limit for a player's bank balance
