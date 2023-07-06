@@ -36,7 +36,7 @@ class ecoCommand extends Command {
     } else if(count($args) == 3 or $args[0] == "help") {
       if ($args[0] == "help") {
         $sender->sendMessage("§e*-- EconomyBridge Commands --*");
-        $sender->sendMessage("§6/eco set <player> <amount> - set Player balance to input Amount");
+        $sender->sendMessage("§6/eco set <player> <amount> - Sey Player balance to input Amount");
         $sender->sendMessage("§6/eco give <player> <amount> - Give the input Amount to Player balance");
         $sender->sendMessage("§6/eco take <player> <amount> - Take the input Amount from Player balance");
         $sender->sendMessage("§e*-- EconomyBridge Commands --*");
