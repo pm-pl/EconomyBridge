@@ -24,8 +24,8 @@ class registerAccount {
             "bank" => $startingBank,
         ];
         
-        $config->set($player, $data);
-        $config->save();
+        $this->config->set($player, $data);
+        $this->config->save();
         $this->plugin->getLogger()->error("New Player $player has $startingBalance now");
     }
 }
