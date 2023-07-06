@@ -9,7 +9,7 @@ use pocketmine\utils\Config;
 
 class registerAccount {
     private $plugin;
-    
+    private $confif;
     public function __construct(PluginBase $plugin) {
         $this->plugin = $plugin;
     }

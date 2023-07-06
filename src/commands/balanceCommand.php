@@ -8,7 +8,7 @@ use pocketmine\plugin\Plugin;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\Config;
-use pocketmine\Player;
+use pocketmine\player\Player;
 
 use iNA16\EconomyBridge\api\getBal;
 use iNA16\EconomyBridge\api\isExist;

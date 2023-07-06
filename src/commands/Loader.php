@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace iNA16\EconomyBridge\commands;
 
 #use pocketmine\command\CommandMap;
-use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginBase;
 use iNA16\EconomyBridge\commands\balanceCommand;
 
 class Loader{
