@@ -15,7 +15,7 @@ class registerAccount {
     }
     
     public function registerAccount(string $player): void {
-        $config = new Config($this->plugin->getDataFolder() . "players_data.yml");
+        $this->config = new Config($this->plugin->getDataFolder() . "players_data.yml");
         $startingBalance = $this->config->getNested("PlayerBalance.StartingAmount");
         $startingBank = $this->config->getNested("BankBalance.StartingAmount");
         
